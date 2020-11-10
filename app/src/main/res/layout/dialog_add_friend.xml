@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/con"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/img_im_friend_code_bg"
+		android:clickable="true">
+
+		<ImageView
+			android:id="@+id/qrcode"
+			android:layout_width="460px"
+			android:layout_height="460px"
+			android:layout_marginLeft="141px"
+			android:layout_marginTop="169px"
+			android:src="@drawable/img_default"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

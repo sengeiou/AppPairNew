@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f5f5f5"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:src="@drawable/img_user_top_bg"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="65px"
+					android:gravity="center_horizontal"
+					android:orientation="vertical">
+
+					<RelativeLayout
+						android:layout_width="248px"
+						android:layout_height="215px"
+						android:background="@drawable/img_head_bg">
+
+						<com.lys.kit.view.HeadImageView
+							android:id="@+id/head"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginLeft="11px"
+							android:layout_marginTop="9px"
+							android:layout_marginRight="11px"
+							android:layout_marginBottom="9px"
+							android:scaleType="centerCrop"
+							android:src="@drawable/img_default_head"/>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20px"
+						android:text="某某某"
+						android:textColor="#fff"
+						android:textSize="26px"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="42px"
+					android:layout_marginTop="392px"
+					android:layout_marginRight="42px"
+					android:layout_marginBottom="8px"
+					android:background="@drawable/shadow_bg_2"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_school"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="学校"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/schoolText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="190px"
+							android:text="学校学校学校学校学校学校"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"
+						android:visibility="gone"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:visibility="gone">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_class"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="班级"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/classText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="190px"
+							android:text="班级班级班级班级班级班级班级"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"
+						android:visibility="gone"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_account"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="账号"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/accountText"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="190px"
+							android:text="542352346324534534"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/modifyPswCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_psw"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="密码"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10px"
+							android:layout_weight="1"
+							android:gravity="right"
+							android:text="修改密码"
+							android:textColor="#a7a7a7"
+							android:textSize="23px"/>
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="75px"
+							android:src="@drawable/img_go"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/wifiCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_wifi"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="WIFI"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/wifiName"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10px"
+							android:layout_weight="1"
+							android:gravity="right"
+							android:text="wifi名称"
+							android:textColor="#a7a7a7"
+							android:textSize="23px"/>
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="75px"
+							android:src="@drawable/img_go"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/sleepCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_sleep"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="休眠"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/sleepTime"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10px"
+							android:layout_weight="1"
+							android:gravity="right"
+							android:text="无操作5分钟后"
+							android:textColor="#a7a7a7"
+							android:textSize="23px"/>
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="75px"
+							android:src="@drawable/img_go"/>
+
+					</LinearLayout>
+
+					<View
+						android:id="@+id/sleepLine"
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_light"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="亮度"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginRight="46px"
+							android:gravity="center_vertical|right"
+							android:orientation="horizontal">
+
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/img_user_light_small"/>
+
+							<SeekBar
+								android:id="@+id/lightSeekBar"
+								android:layout_width="766px"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="15px"
+								android:layout_marginRight="15px"
+								android:max="1000"
+								android:maxHeight="5px"
+								android:progress="300"
+								android:progressDrawable="@drawable/light_progress_bg"
+								android:thumb="@drawable/img_light_thumb"/>
+
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/img_user_light_big"/>
+
+							<Switch
+								android:id="@+id/lightAutoSwitch"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="30px"
+								android:padding="20px"
+								android:switchMinWidth="90px"
+								android:text="自动"
+								android:textColor="#212121"
+								android:textSize="23px"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/clearCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_clear"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="清除缓存"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+						<TextView
+							android:id="@+id/cacheSize"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10px"
+							android:layout_weight="1"
+							android:gravity="right"
+							android:text=""
+							android:textColor="#a7a7a7"
+							android:textSize="23px"/>
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="75px"
+							android:src="@drawable/img_go"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/optimizeCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_optimize"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="优化存储"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/clearAllMsgCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_optimize"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="清除所有消息"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:id="@+id/logoutCon"
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:background="@drawable/user_item_bg"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_optimize"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="退出登录"
+							android:textColor="#212121"
+							android:textSize="23px"/>
+
+					</LinearLayout>
+
+					<View
+						android:id="@+id/logoutLine"
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="120px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="50px"
+							android:src="@drawable/img_user_icon_psw"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="18px"
+							android:text="调试"
+							android:textColor="#212121"
+							android:textSize="15sp"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginRight="46px"
+							android:gravity="center_vertical|right"
+							android:orientation="horizontal">
+
+							<Switch
+								android:id="@+id/debugSwitch"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="20px"
+								android:switchMinWidth="90px"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="35px"
+						android:layout_marginRight="35px"
+						android:background="#ebebeb"/>
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="20px">
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_marginLeft="75px"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:id="@+id/space"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="111111111111111"
+								android:textColor="#a7a7a7"
+								android:textSize="23px"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="75px"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="设备号："
+								android:textColor="#a7a7a7"
+								android:textSize="23px"/>
+
+							<TextView
+								android:id="@+id/deviceNumber"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="111111111111111"
+								android:textColor="#a7a7a7"
+								android:textSize="23px"/>
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="60px"
+								android:text="版本号："
+								android:textColor="#a7a7a7"
+								android:textSize="23px"/>
+
+							<TextView
+								android:id="@+id/versionCode"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="111111111111111"
+								android:textColor="#a7a7a7"
+								android:textSize="23px"/>
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<!--<RelativeLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="100px">-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/title"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_centerInParent="true"-->
+	<!--android:text="个人中心"/>-->
+
+	<!--</RelativeLayout>-->
+
+	<!--<View-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="1px"-->
+	<!--android:background="#aaa"/>-->
+
+	<!--<ScrollView-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent">-->
+
+	<!--<LinearLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:gravity="center_horizontal"-->
+	<!--android:orientation="vertical">-->
+
+	<!--<Button-->
+	<!--android:id="@+id/clearSysMsg"-->
+	<!--android:layout_width="500px"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_marginTop="20px"-->
+	<!--android:text="删除系统消息"/>-->
+
+	<!--<Button-->
+	<!--android:id="@+id/getSysMsg"-->
+	<!--android:layout_width="500px"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_marginTop="20px"-->
+	<!--android:text="获取系统消息"/>-->
+
+	<!--<TextView-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:text="2019级"/>-->
+
+	<!--</LinearLayout>-->
+	<!--</ScrollView>-->
+
+</RelativeLayout>

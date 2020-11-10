@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/img_board_menu_con">
+
+	<GridLayout
+		android:id="@+id/gridLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:columnCount="3">
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_select"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageSelectImage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_select_image"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageSelectVideo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_select_video"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageCamera"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_camera"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageScreen"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_screen"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageVideo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_video"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageTopic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_topic"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageSelectionGroup"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_selection_group"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageBoardText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_board_text"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconImageNetImg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_net_img"/>
+
+	</GridLayout>
+
+</RelativeLayout>

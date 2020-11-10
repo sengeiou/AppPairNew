@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/conRight"
+		android:layout_width="630px"
+		android:layout_height="155px">
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/bgRight"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/img_task_bg_right_class"/>
+
+		<ImageView
+			android:id="@+id/typeRight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="28px"
+			android:layout_marginRight="50px"
+			android:src="@drawable/img_task_type_class"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@id/typeRight"
+			android:layout_marginLeft="50px"
+			android:layout_marginRight="20px"
+			android:layout_toLeftOf="@id/typeRight"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/nameRight"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:gravity="right"
+				android:lines="1"
+				android:text="字名字名字名字名字名字"
+				android:textColor="#fff"
+				android:textSize="26px"/>
+
+			<TextView
+				android:id="@+id/sendNameRight"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:text="发送者：XXX"
+				android:textColor="#fff"
+				android:textSize="23px"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/dateRight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="60px"
+			android:layout_marginBottom="50px"
+			android:text="07-25 00:00:00"
+			android:textColor="#fff"
+			android:textSize="23px"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/conLeft"
+		android:layout_width="630px"
+		android:layout_height="155px">
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/bgLeft"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/img_task_bg_left_job"/>
+
+		<ImageView
+			android:id="@+id/typeLeft"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="50px"
+			android:layout_marginTop="28px"
+			android:src="@drawable/img_task_type_job"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@id/typeLeft"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="50px"
+			android:layout_toRightOf="@id/typeLeft"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/nameLeft"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字"
+				android:textColor="#fff"
+				android:textSize="26px"/>
+
+			<TextView
+				android:id="@+id/sendNameLeft"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="发送者：XXX"
+				android:textColor="#fff"
+				android:textSize="23px"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/dateLeft"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginRight="60px"
+			android:layout_marginBottom="50px"
+			android:text="07-25 00:00:00"
+			android:textColor="#fff"
+			android:textSize="23px"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

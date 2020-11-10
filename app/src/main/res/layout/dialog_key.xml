@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="75px"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="KEY："
+				android:textColor="#000"
+				android:textSize="30px"/>
+
+			<EditText
+				android:id="@+id/key"
+				android:layout_width="525px"
+				android:layout_height="wrap_content"
+				android:hint="请输入KEY"
+				android:inputType="numberPassword"
+				android:textColor="#000"
+				android:textColorHint="#c9c9c9"
+				android:textSize="30px"/>
+
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/cast"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30px"
+			android:paddingTop="30px"
+			android:paddingBottom="30px"
+			android:text="CAST"
+			android:textSize="30px"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

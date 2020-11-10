@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#000">
+
+	<SurfaceView
+		android:id="@+id/surfaceView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"/>
+
+	<View
+		android:id="@+id/touch"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<ProgressBar
+		android:id="@+id/loading"
+		style="?android:attr/progressBarStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:id="@+id/lock"
+		android:layout_width="75px"
+		android:layout_height="75px"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="30px"
+		android:src="@drawable/img_lock"/>
+
+	<LinearLayout
+		android:id="@+id/time"
+		android:layout_width="300px"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="#4000"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="23px"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/timePos"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0:21"
+				android:textColor="#0f0"
+				android:textSize="27px"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="3px"
+				android:layout_marginRight="3px"
+				android:text="/"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+			<TextView
+				android:id="@+id/timeDuration"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0:21"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+		</LinearLayout>
+
+		<ProgressBar
+			android:id="@+id/timeProgress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="23px"
+			android:layout_marginLeft="30px"
+			android:layout_marginRight="30px"
+			android:layout_marginTop="23px"
+			android:max="1000"
+			android:minHeight="8px"
+			android:progress="50"
+			android:progressDrawable="@drawable/progress_bg"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/level"
+		android:layout_width="300px"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="#4000"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="invisible">
+
+		<ImageView
+			android:id="@+id/levelIcon"
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:layout_marginTop="23px"
+			android:src="@drawable/img_light"/>
+
+		<ProgressBar
+			android:id="@+id/levelProgress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="23px"
+			android:layout_marginLeft="30px"
+			android:layout_marginRight="30px"
+			android:layout_marginTop="23px"
+			android:max="1000"
+			android:minHeight="8px"
+			android:progress="50"
+			android:progressDrawable="@drawable/progress_bg"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/controller"
+		android:layout_width="match_parent"
+		android:layout_height="83px"
+		android:layout_alignParentBottom="true"
+		android:background="#8888"
+		android:clickable="true"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/control"
+			android:layout_width="71px"
+			android:layout_height="71px"
+			android:layout_marginLeft="15px"
+			android:padding="15px"
+			android:src="@drawable/img_state_play"/>
+
+		<SeekBar
+			android:id="@+id/progress"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="8px"
+			android:layout_weight="1"
+			android:max="1000"
+			android:maxHeight="6px"
+			android:progress="50"
+			android:progressDrawable="@drawable/progress_bg"
+			android:secondaryProgress="0"
+			android:thumb="@drawable/img_thumb"/>
+
+		<TextView
+			android:id="@+id/pos"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0:21"
+			android:textColor="#fff"
+			android:textSize="27px"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3px"
+			android:layout_marginRight="3px"
+			android:text="/"
+			android:textColor="#fff"
+			android:textSize="27px"/>
+
+		<TextView
+			android:id="@+id/duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="7:51"
+			android:textColor="#fff"
+			android:textSize="27px"/>
+
+		<TextView
+			android:id="@+id/speed"
+			android:layout_width="120px"
+			android:layout_height="69px"
+			android:layout_marginLeft="15px"
+			android:gravity="center"
+			android:text="1.25X"
+			android:textColor="#fff"
+			android:textSize="27px"/>
+
+		<ImageView
+			android:id="@+id/full"
+			android:layout_width="71px"
+			android:layout_height="71px"
+			android:layout_marginRight="15px"
+			android:padding="15px"
+			android:src="@drawable/img_to_full"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/speedMenu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="120px"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginBottom="83px"
+			android:layout_marginRight="86px"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/speed200"
+				android:layout_width="match_parent"
+				android:layout_height="63px"
+				android:background="#8888"
+				android:gravity="center"
+				android:text="2X"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="#8fff"/>
+
+			<TextView
+				android:id="@+id/speed150"
+				android:layout_width="match_parent"
+				android:layout_height="63px"
+				android:background="#8888"
+				android:gravity="center"
+				android:text="1.5X"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="#8fff"/>
+
+			<TextView
+				android:id="@+id/speed125"
+				android:layout_width="match_parent"
+				android:layout_height="63px"
+				android:background="#8888"
+				android:gravity="center"
+				android:text="1.25X"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="#8fff"/>
+
+			<TextView
+				android:id="@+id/speed100"
+				android:layout_width="match_parent"
+				android:layout_height="63px"
+				android:background="#8888"
+				android:gravity="center"
+				android:text="1X"
+				android:textColor="#fff"
+				android:textSize="27px"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:background="#8fff"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/error"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<TextView
+			android:id="@+id/errorInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="网络错误，请检查网络连接"
+			android:textColor="#fff"
+			android:textSize="27px"/>
+
+		<Button
+			android:id="@+id/retry"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15px"
+			android:paddingBottom="15px"
+			android:paddingLeft="45px"
+			android:paddingRight="45px"
+			android:paddingTop="15px"
+			android:text="重 试"/>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/replay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:src="@drawable/img_replay"/>
+
+</RelativeLayout>

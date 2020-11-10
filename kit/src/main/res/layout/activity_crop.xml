@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000">
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="20px"
+		android:layout_marginLeft="20px"
+		android:layout_marginRight="20px"
+		android:layout_marginTop="20px"
+		android:scaleType="fitCenter"
+		android:src="@drawable/img_default"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<View
+			android:id="@+id/maskTop"
+			android:layout_width="match_parent"
+			android:layout_height="100px"
+			android:background="#4000"/>
+
+		<LinearLayout
+			android:id="@+id/maskHeight"
+			android:layout_width="match_parent"
+			android:layout_height="100px"
+			android:orientation="horizontal">
+
+			<View
+				android:id="@+id/maskLeft"
+				android:layout_width="100px"
+				android:layout_height="match_parent"
+				android:background="#4000"/>
+
+			<View
+				android:id="@+id/maskWidth"
+				android:layout_width="100px"
+				android:layout_height="match_parent"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#4000"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#4000"/>
+
+	</LinearLayout>
+
+	<View
+		android:id="@+id/mask"
+		android:layout_width="100px"
+		android:layout_height="100px"
+		android:layout_marginLeft="300px"
+		android:layout_marginTop="200px"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ImageView
+			android:id="@+id/leftTop"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/rightTop"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="500px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/leftBottom"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/rightBottom"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/left"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/top"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/right"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+		<ImageView
+			android:id="@+id/bottom"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="100px"
+			android:layout_marginTop="100px"
+			android:scaleType="center"
+			android:src="@drawable/img_cut_point"/>
+
+	</FrameLayout>
+
+	<com.lys.base.view.ClickImageView
+		android:id="@+id/cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20px"
+		android:layout_marginTop="20px"
+		android:src="@drawable/icon_menu_cancel"/>
+
+	<com.lys.base.view.ClickImageView
+		android:id="@+id/ok"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="20px"
+		android:layout_marginTop="20px"
+		android:src="@drawable/icon_menu_ok"/>
+
+</RelativeLayout>

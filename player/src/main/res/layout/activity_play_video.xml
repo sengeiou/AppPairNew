@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000">
+
+	<VideoView
+		android:id="@+id/videoView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"/>
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="?android:attr/progressBarStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"/>
+
+	<ImageView
+		android:id="@+id/play"
+		android:layout_width="150px"
+		android:layout_height="150px"
+		android:layout_centerInParent="true"
+		android:src="@drawable/img_play"/>
+
+	<!--<ImageView-->
+		<!--android:id="@+id/close"-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_alignParentRight="true"-->
+		<!--android:layout_marginRight="20px"-->
+		<!--android:layout_marginTop="20px"-->
+		<!--android:background="@drawable/photo_btn_bg"-->
+		<!--android:src="@drawable/img_delete_photo">-->
+	<!--</ImageView>-->
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="100px"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/oper"
+			android:layout_width="100px"
+			android:layout_height="100px"
+			android:layout_marginLeft="70px"
+			android:scaleType="center"
+			android:src="@drawable/img_tree_add"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10px"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:lines="1"
+					android:text="名字名字名字名字"
+					android:textColor="#000"
+					android:textSize="26px"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/taskId"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="50px"
+					android:text="xxxxxxxxxxxxxxxxxxxxxxxxx"
+					android:textColor="#949494"
+					android:textSize="20px"
+					android:visibility="gone"/>
+
+				<TextView
+					android:id="@+id/count"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="000000"
+					android:textColor="#949494"
+					android:textSize="20px"/>
+
+				<ImageView
+					android:id="@+id/original"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="50px"
+					android:src="@drawable/img_flag_original"/>
+
+				<ImageView
+					android:id="@+id/taskType"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20px"
+					android:src="@drawable/img_flag_job"/>
+
+				<ImageView
+					android:id="@+id/jobType"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20px"
+					android:src="@drawable/img_flag_only_select"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/note"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="备注"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/open"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="不开放"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/share"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="分享"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/send"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="发送"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/add"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:paddingLeft="14px"
+				android:paddingTop="16px"
+				android:paddingRight="10px"
+				android:paddingBottom="10px"
+				android:src="@drawable/img_add_task"/>
+
+			<!--<TextView-->
+			<!--android:id="@+id/add"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_marginRight="30px"-->
+			<!--android:background="@drawable/app_btn"-->
+			<!--android:paddingBottom="16px"-->
+			<!--android:paddingLeft="40px"-->
+			<!--android:paddingRight="40px"-->
+			<!--android:paddingTop="16px"-->
+			<!--android:text="添加"-->
+			<!--android:textColor="#13121a"-->
+			<!--android:textSize="20px"/>-->
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2px"
+		android:layout_marginLeft="40px"
+		android:layout_marginRight="40px"
+		android:background="#f3f4f7"/>
+
+</LinearLayout>

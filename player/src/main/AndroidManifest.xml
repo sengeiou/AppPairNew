@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.lys.player">
+
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+	<application>
+
+		<activity
+			android:name="com.lys.player.activity.PlayFullActivity"
+			android:screenOrientation="landscape"
+			android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+		</activity>
+
+		<activity
+			android:name="com.lys.player.activity.PlayVideoActivity"
+			android:screenOrientation="landscape"
+			android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+		</activity>
+
+	</application>
+
+</manifest>

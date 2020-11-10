@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="5px"
+	android:background="@drawable/shape_app_bg"
+	android:orientation="vertical"
+	android:padding="10px">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="[000]"
+			android:textColor="#202122"
+			android:textSize="24px"/>
+
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:ellipsize="end"
+			android:lines="1"
+			android:text="名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字名字"
+			android:textColor="#202122"
+			android:textSize="24px"/>
+
+		<TextView
+			android:id="@+id/taskCount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="名字名字"
+			android:textColor="#202122"
+			android:textSize="24px"/>
+
+	</LinearLayout>
+
+	<include
+		android:id="@+id/task0"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<include
+		android:id="@+id/task1"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<include
+		android:id="@+id/task2"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<include
+		android:id="@+id/task3"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<include
+		android:id="@+id/task4"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<include
+		android:id="@+id/task5"
+		layout="@layout/item_task_table_task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<!--<include-->
+	<!--android:id="@+id/task6"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task7"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task8"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task9"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task10"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task11"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+	<!--<include-->
+	<!--android:id="@+id/task12"-->
+	<!--layout="@layout/item_task_table_task"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

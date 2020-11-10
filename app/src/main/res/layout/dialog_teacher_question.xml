@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/con"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="200px"
+		android:layout_marginRight="200px"
+		android:background="@drawable/shadow_bg"
+		android:clickable="true">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#fff">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="30px">
+
+				<TextView
+					android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="    XXX 老师，本次课程已经结束，辛苦了！请您对学生在课堂上的表现进行评价："
+					android:textColor="#000"
+					android:textSize="26px"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="1、学生在本次课堂上与您积极互动，主动配合"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupHot"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="2、学生在本次课堂上能一直保持高度的注意力"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupMind"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="3、对于本次课堂的内容，学生能完全理解吃透"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupLogic"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="如有其它情况，可在此填写："
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<EditText
+					android:id="@+id/inputOther"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10px"
+					android:background="@drawable/img_math_user_bg"
+					android:gravity="top"
+					android:hint="请输入您的描述"
+					android:inputType="textMultiLine"
+					android:maxLength="1000"
+					android:minLines="4"
+					android:padding="20px"
+					android:textColor="#454545"
+					android:textColorHint="#a1a1a1"
+					android:textSize="32px"
+					android:visibility="invisible"/>
+
+				<com.lys.base.view.ClickTextView
+					android:id="@+id/commit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="30px"
+					android:background="@drawable/img_selection_yes"
+					android:gravity="center"
+					android:paddingLeft="200px"
+					android:paddingRight="200px"
+					android:text="提交"
+					android:textColor="#fff"
+					android:textSize="30px"/>
+
+			</LinearLayout>
+		</ScrollView>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/content"
+		android:layout_alignRight="@id/content"
+		android:layout_marginTop="-10px"
+		android:layout_marginRight="-10px"
+		android:background="@drawable/photo_btn_bg"
+		android:src="@drawable/img_delete_photo">
+	</ImageView>
+
+</RelativeLayout>

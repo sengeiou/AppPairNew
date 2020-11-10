@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:id="@+id/con"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginRight="16dp"
+		android:background="@drawable/img_math_white_bg"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginRight="6dp"
+			android:text="选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户"
+			android:textColor="#454545"
+			android:textSize="13sp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginBottom="6dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<com.lys.kit.view.RoundImageView
+				android:id="@+id/sendHead"
+				android:layout_width="16dp"
+				android:layout_height="16dp"
+				android:src="@drawable/img_default_head"
+				app:radius="999dp"/>
+
+			<TextView
+				android:id="@+id/sendName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:layout_weight="1"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="辅导老师：杨主任"
+				android:textColor="#a1a1a1"
+				android:textSize="11sp"/>
+
+			<TextView
+				android:id="@+id/sendTime"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="2dp"
+				android:text="yyyy - MM - dd   hh : mm"
+				android:textColor="#a1a1a1"
+				android:textSize="10sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/commentAndScoreCon"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginBottom="6dp"
+			android:background="@drawable/img_math_user_bg"
+			android:orientation="vertical"
+			android:paddingBottom="4dp">
+
+			<TextView
+				android:id="@+id/comment"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:layout_marginTop="4dp"
+				android:layout_marginRight="4dp"
+				android:text="选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户选择选择用户选择用户"
+				android:textColor="#444444"
+				android:textSize="10sp"
+				android:visibility="visible"/>
+
+			<LinearLayout
+				android:id="@+id/scoreCon"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_marginLeft="4dp"
+				android:layout_marginTop="4dp"
+				android:layout_marginRight="4dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:visibility="visible">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="+ "
+					android:textColor="#ff4952"
+					android:textSize="10sp"/>
+
+				<TextView
+					android:id="@+id/score"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="8 "
+					android:textColor="#ff4952"
+					android:textSize="10sp"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="积分"
+					android:textColor="#ff4952"
+					android:textSize="8sp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginBottom="6dp"
+			android:gravity="center_vertical|right"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/doComment"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="点评"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/doScore"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="打分"
+				android:textColor="#13121a"
+				android:textSize="20px"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

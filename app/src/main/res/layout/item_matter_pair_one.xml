@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="434px"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="32px"
+		android:layout_marginBottom="22px">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="238px">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/cover"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:scaleType="fitXY"
+					android:src="@drawable/img_default"/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentBottom="true"
+					android:layout_marginRight="25px"
+					android:layout_marginBottom="25px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_shop_money_big"/>
+
+					<TextView
+						android:id="@+id/money"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="5px"
+						android:letterSpacing="0.12"
+						android:paddingBottom="4px"
+						android:text="3000/"
+						android:textColor="#f34d0b"
+						android:textSize="42px"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:letterSpacing="0.12"
+						android:paddingBottom="4px"
+						android:text="小时"
+						android:textColor="#f34d0b"
+						android:textSize="38px"/>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/info"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="负责人：xxx  SORT：666"
+				android:textColor="#474747"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="名字名字名字名字名字名字名字"
+				android:textColor="#474747"
+				android:textSize="20px"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/place"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/img_matter_place_banner"/>
+
+		<TextView
+			android:id="@+id/invalid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:alpha="0.5"
+			android:background="#000000"
+			android:gravity="center"
+			android:paddingTop="30px"
+			android:paddingBottom="30px"
+			android:text="无效"
+			android:textColor="#ffffff"
+			android:textSize="30px"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.lys.app">
+
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+	<!--语音通话需要的权限-->
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+	<!--智学-->
+	<!--<uses-permission android:name="android.permission.WAKE_LOCK"/>-->
+	<!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>-->
+
+	<application
+		android:name="com.lys.App"
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@drawable/ic_launcher"
+		android:supportsRtl="true"
+		android:theme="@style/LysAppTheme">
+
+		<!--教师端&学生端-->
+
+		<meta-data
+			android:name="UMENG_APPKEY"
+			android:value="5d450c5b4ca357dc5300076e"/>
+		<meta-data
+			android:name="UMENG_CHANNEL"
+			android:value="main"/>
+
+		<activity
+			android:name="com.lys.activity.ActivityMain"
+			android:launchMode="singleTask"
+			android:screenOrientation="landscape"
+			android:theme="@style/MainTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+
+				<!--<category android:name="android.intent.category.HOME"/>-->
+				<!--<category android:name="android.intent.category.DEFAULT"/>-->
+			</intent-filter>
+		</activity>
+
+		<!--智学-->
+
+		<!--<meta-data-->
+		<!--android:name="UMENG_APPKEY"-->
+		<!--android:value="5d450c810cafb28b070005fe"/>-->
+		<!--<meta-data-->
+		<!--android:name="UMENG_CHANNEL"-->
+		<!--android:value="zhixue"/>-->
+
+		<!--<activity-->
+		<!--android:name="com.lys.activity.ActivityZhiXue"-->
+		<!--android:screenOrientation="landscape">-->
+		<!--<intent-filter>-->
+		<!--<action android:name="android.intent.action.MAIN"/>-->
+		<!--<category android:name="android.intent.category.LAUNCHER"/>-->
+		<!--</intent-filter>-->
+		<!--</activity>-->
+
+		<!--其它页面-->
+
+		<activity
+			android:name="com.lys.activity.ActivityUser"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityUserManager"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityFriendManager"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityStudentWar"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskGroup"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskStudent"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityStudentWarOver"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityMasterTools"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityMarket"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskList"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityLiveList"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.CaptureActivityLandscape"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskLib"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskTable"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskAnalyze"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTeachRecord"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTeach"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTeachTeacher"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTaskBook"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityIM"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden|adjustResize">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityMainNote"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityNoteBook"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityMainTopic"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTopicFilter"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTopicAnswer"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTopicRecord"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityTopicWatch"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivitySelectUser"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityShopHome"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityShopClass"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityShopPair"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityShopDetail"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.activity.ActivityLivePlay"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<receiver
+			android:name="com.lys.receiver.LysNotificationReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+				<action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+				<action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE"/>
+			</intent-filter>
+		</receiver>
+
+		<receiver
+			android:name="com.lys.receiver.AppReceiver"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED"/>
+				<action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+				<data android:scheme="package"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+			</intent-filter>
+		</receiver>
+
+		<provider
+			android:name="android.support.v4.content.FileProvider"
+			android:authorities="${applicationId}.FileProvider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/rc_file_path"/>
+		</provider>
+
+	</application>
+
+</manifest>

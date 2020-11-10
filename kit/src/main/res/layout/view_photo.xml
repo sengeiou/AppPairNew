@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/con"
+	android:layout_width="512px"
+	android:layout_height="512px"
+	android:rotation="0"
+	android:translationX="0px"
+	android:translationY="0px">
+
+	<View
+		android:id="@+id/mask"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/shadow_bg">
+	</View>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="13px">
+
+		<ImageView
+			android:id="@+id/photo"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/board_photo_bg"
+			android:padding="1px">
+		</ImageView>
+
+	</RelativeLayout>
+
+	<com.lys.kit.view.SelectionGroup
+		android:id="@+id/selectionGroup"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="50px"/>
+
+	<TextView
+		android:id="@+id/boardText"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="14px"
+		android:text=""/>
+
+	<!--<TextView-->
+	<!--android:id="@+id/boardText"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent"-->
+	<!--android:alpha="0.9f"-->
+	<!--android:background="#0f0"-->
+	<!--android:letterSpacing="10px"-->
+	<!--android:lineSpacingExtra="10px"-->
+	<!--android:lineSpacingMultiplier="2px"-->
+	<!--android:lines="2"-->
+	<!--android:text="测试文本"-->
+	<!--android:textColor="0xfff"-->
+	<!--android:textSize="80px"-->
+	<!--android:textStyle="bold"/>-->
+
+	<ImageView
+		android:id="@+id/rotate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/photo_btn_bg"
+		android:src="@drawable/img_rotate_photo">
+	</ImageView>
+
+	<ImageView
+		android:id="@+id/videoPlay"
+		android:layout_width="100px"
+		android:layout_height="100px"
+		android:layout_centerInParent="true"
+		android:scaleType="center"
+		android:src="@drawable/img_play"/>
+
+	<TextView
+		android:id="@+id/durationText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="26px"
+		android:layout_marginLeft="30px"
+		android:background="#8888"
+		android:paddingLeft="6px"
+		android:paddingRight="6px"
+		android:text="文本文本文本"
+		android:textColor="#fff"
+		android:textSize="23px"/>
+
+	<ImageView
+		android:id="@+id/showFlag"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_margin="24px"
+		android:src="@drawable/img_delete_photo">
+	</ImageView>
+
+	<TextView
+		android:id="@+id/parse"
+		android:layout_width="72px"
+		android:layout_height="72px"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="24px"
+		android:background="@drawable/photo_btn_bg"
+		android:gravity="center"
+		android:text="答"
+		android:textColor="#fff"
+		android:textSize="23px"/>
+
+</RelativeLayout>

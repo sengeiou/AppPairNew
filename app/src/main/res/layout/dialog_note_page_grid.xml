@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="30px"
+		android:layout_marginTop="30px"
+		android:layout_marginRight="30px"
+		android:layout_marginBottom="20px"
+		android:background="@drawable/shadow_bg">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#ddd"
+			android:overScrollMode="never"
+			android:padding="4px"/>
+
+		<LinearLayout
+			android:id="@+id/menuBar"
+			android:layout_width="wrap_content"
+			android:layout_height="140px"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/movePrev"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50px"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_move_prev"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/moveNext"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50px"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_move_next"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50px"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_delete"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/copy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50px"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_copy"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="50px"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_cancel"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="20px"
+		android:layout_marginRight="20px"
+		android:background="@drawable/photo_btn_bg"
+		android:src="@drawable/img_delete_photo">
+	</ImageView>
+
+</RelativeLayout>

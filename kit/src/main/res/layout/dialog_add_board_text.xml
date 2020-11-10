@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="20px"
+		android:layout_marginLeft="30px"
+		android:layout_marginRight="30px"
+		android:layout_marginTop="30px"
+		android:background="@drawable/shadow_bg">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#ddd"
+			android:orientation="vertical"
+			android:padding="4px">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_width="0px"
+					android:layout_height="match_parent"
+					android:layout_weight="2">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_margin="20px">
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:background="@drawable/shadow_bg">
+						</View>
+
+						<EditText
+							android:id="@+id/boardText"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="14px"
+							android:hint="请在此处输入文本"
+							android:text=""/>
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+				<ScrollView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:padding="20px">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="大小："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/size"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="颜色："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="30px"
+								android:background="@drawable/board_bg_default">
+
+								<View
+									android:id="@+id/color"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"/>
+							</RelativeLayout>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="对齐："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<TextView
+								android:id="@+id/gravityH"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="25px"
+								android:layout_weight="1"
+								android:background="#888"
+								android:gravity="center"
+								android:text="XXXXX"
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<TextView
+								android:id="@+id/gravityV"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="25px"
+								android:layout_weight="1"
+								android:background="#888"
+								android:gravity="center"
+								android:text="XXXXX"
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+						</LinearLayout>
+
+						<!--<LinearLayout-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:gravity="center_vertical"-->
+						<!--android:orientation="horizontal"-->
+						<!--android:padding="10px">-->
+
+						<!--<TextView-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:text="样式："-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--<TextView-->
+						<!--android:id="@+id/textStyle"-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:layout_marginRight="25px"-->
+						<!--android:layout_weight="1"-->
+						<!--android:background="#888"-->
+						<!--android:gravity="center"-->
+						<!--android:text="XXXXX"-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--</LinearLayout>-->
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="粗体："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<Switch
+								android:id="@+id/bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="30px"
+								android:padding="10px"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="填充色："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="30px"
+								android:background="@drawable/board_bg_default">
+
+								<View
+									android:id="@+id/solidColor"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"/>
+							</RelativeLayout>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边框线宽："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/strokeWidth"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边框色："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="30px"
+								android:background="@drawable/board_bg_default">
+
+								<View
+									android:id="@+id/strokeColor"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"/>
+							</RelativeLayout>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角类型："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<TextView
+								android:id="@+id/cornerType"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="25px"
+								android:layout_weight="1"
+								android:background="#888"
+								android:gravity="center"
+								android:text="XXXXX"
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon0"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName0"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner0"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner1"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner2"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner3"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon4"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner4"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon5"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner5"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon6"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName6"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner6"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/cornerCon7"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/cornerName7"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="圆角："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/corner7"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边距类型："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<TextView
+								android:id="@+id/paddingType"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="25px"
+								android:layout_weight="1"
+								android:background="#888"
+								android:gravity="center"
+								android:text="XXXXX"
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/paddingCon0"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/paddingName0"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/padding0"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/paddingCon1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/paddingName1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/padding1"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/paddingCon2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/paddingName2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/padding2"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:id="@+id/paddingCon3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:id="@+id/paddingName3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="边距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/padding3"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="字间距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/letterSpacing"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<!--<LinearLayout-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:gravity="center_vertical"-->
+						<!--android:orientation="horizontal"-->
+						<!--android:padding="10px">-->
+
+						<!--<TextView-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:text="行间距（加）："-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--<SeekBar-->
+						<!--android:id="@+id/lineSpacingAdd"-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:max="100"-->
+						<!--android:progress="30"/>-->
+
+						<!--</LinearLayout>-->
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="行间距："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/lineSpacingMult"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="字缩放："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/textScaleX"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px"
+							android:visibility="gone">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="行数："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/lines"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<!--<LinearLayout-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:gravity="center_vertical"-->
+						<!--android:orientation="horizontal"-->
+						<!--android:padding="10px">-->
+
+						<!--<TextView-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:text="截断方式："-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--<TextView-->
+						<!--android:id="@+id/ellipsize"-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:layout_marginRight="25px"-->
+						<!--android:layout_weight="1"-->
+						<!--android:background="#888"-->
+						<!--android:gravity="center"-->
+						<!--android:text="XXXXX"-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--</LinearLayout>-->
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="阴影模糊度："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/shadowLayerRadius"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="阴影偏移（X）："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/shadowLayerDx"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="阴影偏移（Y）："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<SeekBar
+								android:id="@+id/shadowLayerDy"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:max="100"
+								android:progress="30"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal"
+							android:padding="10px">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="阴影颜色："
+								android:textColor="#000"
+								android:textSize="26px"/>
+
+							<RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="30px"
+								android:background="@drawable/board_bg_default">
+
+								<View
+									android:id="@+id/shadowLayerColor"
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"/>
+							</RelativeLayout>
+
+						</LinearLayout>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="600px"/>
+
+						<!--<LinearLayout-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:gravity="center_vertical"-->
+						<!--android:orientation="horizontal"-->
+						<!--android:padding="10px">-->
+
+						<!--<TextView-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:text="属性："-->
+						<!--android:textColor="#000"-->
+						<!--android:textSize="26px"/>-->
+
+						<!--<SeekBar-->
+						<!--android:id="@+id/seekBar"-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:max="100"-->
+						<!--android:progress="30"/>-->
+
+						<!--</LinearLayout>-->
+
+					</LinearLayout>
+				</ScrollView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<!--<Button-->
+				<!--android:id="@+id/add"-->
+				<!--android:layout_width="500px"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_margin="30px"-->
+				<!--android:paddingBottom="30px"-->
+				<!--android:paddingTop="30px"-->
+				<!--android:text="添加"-->
+				<!--android:textSize="30px"/>-->
+
+				<Button
+					android:id="@+id/ok"
+					android:layout_width="500px"
+					android:layout_height="wrap_content"
+					android:layout_margin="30px"
+					android:paddingBottom="30px"
+					android:paddingTop="30px"
+					android:text="确定"
+					android:textSize="30px"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="20px"
+		android:layout_marginTop="20px"
+		android:background="@drawable/photo_btn_bg"
+		android:src="@drawable/img_delete_photo">
+	</ImageView>
+
+</RelativeLayout>
+
+
+

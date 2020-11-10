@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="858px"
+	android:layout_height="wrap_content"
+	android:background="@drawable/menu_con_bg"
+	android:orientation="vertical"
+	android:paddingBottom="16px"
+	android:paddingTop="16px">
+
+	<TextView
+		android:id="@+id/menu0"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line0"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu1"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line1"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu2"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line2"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu3"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line3"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu4"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line4"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu5"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line5"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu6"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line6"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu7"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line7"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu8"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+	<View
+		android:id="@+id/line8"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f0f0f0"/>
+
+	<TextView
+		android:id="@+id/menu9"
+		android:layout_width="match_parent"
+		android:layout_height="92px"
+		android:background="@drawable/menu_bg"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="30px"/>
+
+</LinearLayout>

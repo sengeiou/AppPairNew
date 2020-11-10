@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/con"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#0f0"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10px">
+
+		<TextView
+			android:id="@+id/index"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:letterSpacing="0.12"
+			android:text="第 001 页 ： "
+			android:textColor="#454545"
+			android:textSize="26px"/>
+
+		<ProgressBar
+			android:id="@+id/progress"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:max="1000"
+			android:progress="200"/>
+
+		<TextView
+			android:id="@+id/time"
+			android:layout_width="360px"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20px"
+			android:letterSpacing="0.12"
+			android:text="34 分钟"
+			android:textColor="#454545"
+			android:textSize="26px"/>
+
+	</LinearLayout>
+
+</LinearLayout>

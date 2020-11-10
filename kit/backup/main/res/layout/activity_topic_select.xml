@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f4f4f4"
+	android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="38px"
+		android:background="#151517"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#151517">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/errorReport"
+				android:layout_width="154px"
+				android:layout_height="58px"
+				android:layout_marginLeft="30px"
+				android:background="@drawable/btn_bg"
+				android:gravity="center"
+				android:text="报错"
+				android:textColor="#fff"
+				android:textSize="24px"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/collect"
+				android:layout_width="90px"
+				android:layout_height="60px"
+				android:layout_marginRight="100px"
+				android:scaleType="center"
+				android:src="@drawable/img_fav_normal"
+				android:visibility="gone"/>
+
+			<TextView
+				android:id="@+id/next"
+				android:layout_width="154px"
+				android:layout_height="58px"
+				android:layout_marginRight="30px"
+				android:background="@drawable/btn_bg"
+				android:gravity="center"
+				android:text="下一题"
+				android:textColor="#fff"
+				android:textSize="24px"/>
+
+			<TextView
+				android:id="@+id/result"
+				android:layout_width="154px"
+				android:layout_height="58px"
+				android:layout_marginRight="30px"
+				android:background="@drawable/btn_bg"
+				android:gravity="center"
+				android:text="确定"
+				android:textColor="#fff"
+				android:textSize="24px"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="5px"
+		android:background="#151517"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="56px"
+			android:background="#fff"
+			android:orientation="horizontal">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="题目"
+					android:textColor="#000"
+					android:textSize="24px"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="答案"
+					android:textColor="#000"
+					android:textSize="24px"/>
+
+			</RelativeLayout>
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:background="#caced0"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<com.lys.kit.view.MediaList
+					android:id="@+id/problemCon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+
+				<com.lys.kit.view.MediaList
+					android:id="@+id/parseCon"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="1px"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:background="#cacecf"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

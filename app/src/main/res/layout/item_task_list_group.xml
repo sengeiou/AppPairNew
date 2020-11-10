@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingRight="35px">
+
+	<RelativeLayout
+		android:layout_width="45px"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="40px"
+		android:layout_marginRight="20px">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerHorizontal="true"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_topic_time_axis"/>
+
+	</RelativeLayout>
+
+	<include
+		android:id="@+id/card0"
+		layout="@layout/item_task_list_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card1"
+		layout="@layout/item_task_list_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card2"
+		layout="@layout/item_task_list_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card3"
+		layout="@layout/item_task_list_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="38px"
+		android:background="#151517"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#151517">
+
+		<LinearLayout
+			android:id="@+id/subjectCon"
+			android:layout_width="wrap_content"
+			android:layout_height="58px"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="45px"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:visibility="visible">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/icon_menu"/>
+
+			<TextView
+				android:id="@+id/subjectText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10px"
+				android:text="全部"
+				android:textColor="#fff"
+				android:textSize="23px"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/reset"
+				android:layout_width="154px"
+				android:layout_height="58px"
+				android:layout_marginRight="30px"
+				android:background="@drawable/btn_bg"
+				android:gravity="center"
+				android:text="重置"
+				android:textColor="#fff"
+				android:textSize="24px"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="5px"
+		android:background="#151517"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<View
+				android:layout_width="1px"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="234px"
+				android:background="#d7d7d7"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="1160px"
+				android:layout_height="match_parent"
+				android:overScrollMode="never"/>
+
+			<View
+				android:layout_width="1px"
+				android:layout_height="match_parent"
+				android:background="#d7d7d7"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/startTopic"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/img_start_topic"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/openFilter"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:padding="30px"
+			android:src="@drawable/img_filter"/>
+
+		<LinearLayout
+			android:id="@+id/filterCon"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+			<View
+				android:id="@+id/closeFilter"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="#4000"/>
+
+			<ScrollView
+				android:layout_width="600px"
+				android:layout_height="match_parent"
+				android:background="#fff"
+				android:clickable="true">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="76px"
+						android:layout_marginLeft="35px"
+						android:gravity="center_vertical"
+						android:text="选择难度"
+						android:textColor="#000"
+						android:textSize="26px"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="15px"
+						android:layout_marginRight="15px"
+						android:background="#efefef"/>
+
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/recyclerViewDifficulty"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:nestedScrollingEnabled="false"
+						android:overScrollMode="never"
+						android:paddingLeft="15px"
+						android:paddingRight="15px"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="5px"
+						android:background="#eeeeee"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="76px"
+						android:layout_marginLeft="35px"
+						android:gravity="center_vertical"
+						android:text="选择题型"
+						android:textColor="#000"
+						android:textSize="26px"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1px"
+						android:layout_marginLeft="15px"
+						android:layout_marginRight="15px"
+						android:background="#efefef"/>
+
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/recyclerViewStyle"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:nestedScrollingEnabled="false"
+						android:overScrollMode="never"
+						android:paddingLeft="15px"
+						android:paddingRight="15px"/>
+
+				</LinearLayout>
+			</ScrollView>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

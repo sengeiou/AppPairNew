@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="88px"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30px"
+			android:text="排课"
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+		<RadioGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100px"
+			android:orientation="horizontal">
+
+			<RadioButton
+				android:id="@+id/modeNone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="无操作"
+				android:textColor="#000"
+				android:textSize="28px"/>
+
+			<RadioButton
+				android:id="@+id/modeFree"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="30px"
+				android:text="设置空闲时间"
+				android:textColor="#000"
+				android:textSize="28px"/>
+
+			<RadioButton
+				android:id="@+id/modeUse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="30px"
+				android:text="学生选时段"
+				android:textColor="#000"
+				android:textSize="28px"/>
+
+			<RadioButton
+				android:id="@+id/modeOver"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="30px"
+				android:text="结课设置"
+				android:textColor="#000"
+				android:textSize="28px"/>
+
+		</RadioGroup>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/prev"
+			android:layout_width="80px"
+			android:layout_height="60px"
+			android:layout_marginLeft="100px"
+			android:paddingLeft="30px"
+			android:paddingTop="15px"
+			android:paddingRight="30px"
+			android:paddingBottom="15px"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_prev"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/next"
+			android:layout_width="80px"
+			android:layout_height="60px"
+			android:layout_marginLeft="60px"
+			android:paddingLeft="30px"
+			android:paddingTop="15px"
+			android:paddingRight="30px"
+			android:paddingBottom="15px"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_next"/>
+
+		<TextView
+			android:id="@+id/student"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100px"
+			android:background="@drawable/app_btn"
+			android:paddingLeft="40px"
+			android:paddingTop="16px"
+			android:paddingRight="40px"
+			android:paddingBottom="16px"
+			android:text="选择学生"
+			android:textColor="#13121a"
+			android:textSize="20px"/>
+
+		<CheckBox
+			android:id="@+id/onlyShow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30px"
+			android:text="只显示此学生"
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:id="@+id/panel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="60px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/currTime"
+						android:layout_width="120px"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:text=""
+						android:textColor="#202122"
+						android:textSize="24px"/>
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<LinearLayout
+							android:id="@+id/timeCon"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+
+							<!--<View-->
+							<!--android:layout_width="0px"-->
+							<!--android:layout_height="match_parent"-->
+							<!--android:layout_weight="100"-->
+							<!--android:background="#0ff"/>-->
+
+							<!--<TextView-->
+							<!--android:layout_width="wrap_content"-->
+							<!--android:layout_height="wrap_content"-->
+							<!--android:text="MM-dd HH:mm"-->
+							<!--android:textColor="#202122"-->
+							<!--android:textSize="15px"/>-->
+
+							<!--<View-->
+							<!--android:layout_width="0px"-->
+							<!--android:layout_height="match_parent"-->
+							<!--android:layout_weight="100"-->
+							<!--android:background="#0ff"/>-->
+
+						</LinearLayout>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="#15000000"/>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/recyclerView"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:overScrollMode="never"
+					android:scrollbars="none"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_alignTop="@id/panel"
+				android:layout_alignBottom="@id/panel"
+				android:layout_marginLeft="120px"
+				android:orientation="horizontal">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+
+				<View
+					android:layout_width="2px"
+					android:layout_height="match_parent"
+					android:background="#f00"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+
+				<View
+					android:layout_width="2px"
+					android:layout_height="match_parent"
+					android:background="#f00"/>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_shadow_line"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

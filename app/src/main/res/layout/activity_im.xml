@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:layout_width="430px"
+		android:layout_height="match_parent"
+		android:background="@drawable/img_im_friend_list_bg"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="160px"
+			android:layout_marginBottom="18px"
+			android:layout_weight="1"
+			android:overScrollMode="never"
+			android:scrollbars="none"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="92px"
+			android:gravity="center"
+			android:orientation="horizontal"
+			android:visibility="invisible">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/addFriend"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_im_friend_scan"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/friendCode"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="23px"
+				android:src="@drawable/img_im_friend_code"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<FrameLayout
+			android:id="@+id/conversation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

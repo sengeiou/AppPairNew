@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5px"
+			android:layout_marginRight="30px"
+			android:text="1920-07-25 00:00:00"
+			android:textColor="#38b2ff"
+			android:textSize="25px"/>
+
+		<TextView
+			android:id="@+id/time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5px"
+			android:layout_marginRight="30px"
+			android:text="5天前"
+			android:textColor="#38b2ff"
+			android:textSize="20px"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_centerHorizontal="true"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_topic_time_axis"/>
+
+		<ImageView
+			android:id="@+id/point"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/img_topic_point_normal"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:id="@+id/con"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15px"
+			android:layout_marginTop="15px"
+			android:background="@drawable/img_topic_record_bg">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/content"
+				android:layout_width="800px"
+				android:layout_height="200px"
+				android:background="#fff"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/img_board_menu_con">
+
+	<GridLayout
+		android:id="@+id/gridLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:columnCount="3">
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconVideoSelect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_select"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconVideoScreen"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_screen"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconVideoVideo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_video"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/iconVideoDelete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="26px"
+			android:src="@drawable/icon_component_delete"/>
+
+	</GridLayout>
+
+</RelativeLayout>

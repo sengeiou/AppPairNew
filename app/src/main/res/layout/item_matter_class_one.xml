@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="434px"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="32px"
+		android:layout_marginBottom="22px">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/cover"
+				android:layout_width="match_parent"
+				android:layout_height="238px"
+				android:scaleType="fitXY"
+				android:src="@drawable/img_default"/>
+
+			<TextView
+				android:id="@+id/info"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="负责人：xxx  SORT：666"
+				android:textColor="#474747"
+				android:textSize="20px"/>
+
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="名字名字名字名字名字名字名字"
+				android:textColor="#474747"
+				android:textSize="20px"
+				android:visibility="gone"/>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:id="@+id/moneyCon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentBottom="true"
+					android:layout_marginRight="6px"
+					android:gravity="bottom"
+					android:orientation="horizontal">
+
+					<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingBottom="8px">
+
+						<LinearLayout
+							android:id="@+id/rawCon"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+
+							<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:src="@drawable/img_shop_money_small"/>
+
+							<TextView
+								android:id="@+id/moneyRaw"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="6px"
+								android:letterSpacing="0.12"
+								android:paddingBottom="2px"
+								android:text="888"
+								android:textColor="#8d8d8d"
+								android:textSize="20px"/>
+
+						</LinearLayout>
+
+						<View
+							android:layout_width="0px"
+							android:layout_height="1px"
+							android:layout_alignLeft="@id/rawCon"
+							android:layout_alignRight="@id/rawCon"
+							android:layout_marginTop="15px"
+							android:background="#888"/>
+
+					</RelativeLayout>
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10px"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:src="@drawable/img_shop_money_big"/>
+
+						<TextView
+							android:id="@+id/money"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5px"
+							android:letterSpacing="0.12"
+							android:paddingBottom="4px"
+							android:text="3000"
+							android:textColor="#f34d0b"
+							android:textSize="42px"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_marginLeft="6px"
+					android:layout_toLeftOf="@id/moneyCon"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingBottom="12px">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_shop_cart"/>
+
+					<TextView
+						android:id="@+id/buyCount"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8px"
+						android:ellipsize="end"
+						android:lines="1"
+						android:text="xxx 人购买"
+						android:textColor="#474747"
+						android:textSize="18px"/>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+		<ImageView
+			android:id="@+id/place"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:src="@drawable/img_matter_place_banner"/>
+
+		<TextView
+			android:id="@+id/invalid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:alpha="0.5"
+			android:background="#000000"
+			android:gravity="center"
+			android:paddingTop="30px"
+			android:paddingBottom="30px"
+			android:text="无效"
+			android:textColor="#ffffff"
+			android:textSize="30px"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

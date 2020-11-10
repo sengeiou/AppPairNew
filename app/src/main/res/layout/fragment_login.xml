@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#39b3fe">
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:src="@drawable/img_login_bg"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="168px"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/img_login_flag"/>
+
+		<LinearLayout
+			android:layout_width="788px"
+			android:layout_height="70px"
+			android:layout_marginTop="105px"
+			android:background="@drawable/login_input_bg"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="124px"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_login_user"/>
+
+			<EditText
+				android:id="@+id/account"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@null"
+				android:inputType="textPersonName"
+				android:textColor="#fff"
+				android:textColorHint="#c9c9c9"
+				android:textSize="40px"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="788px"
+			android:layout_height="70px"
+			android:layout_marginTop="28px"
+			android:background="@drawable/login_input_bg"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="124px"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_login_psw"/>
+
+			<EditText
+				android:id="@+id/psw"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@null"
+				android:inputType="textPassword"
+				android:textColor="#fff"
+				android:textColorHint="#c9c9c9"
+				android:textSize="40px"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/login"
+			android:layout_width="788px"
+			android:layout_height="70px"
+			android:layout_marginTop="28px"
+			android:background="@drawable/login_btn_bg"
+			android:gravity="center"
+			android:text="登 录"
+			android:textColor="#39b3fe"
+			android:textSize="36px"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="100px">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="新用户"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#aaa"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="900px"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="100px"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="200px"
+						android:layout_height="wrap_content"
+						android:text="用户名："
+						android:textSize="30px"/>
+
+					<EditText
+						android:id="@+id/userName"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:inputType="textPersonName"
+						android:textSize="30px"/>
+
+				</LinearLayout>
+
+				<!--<RadioGroup-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginTop="30px"-->
+				<!--android:orientation="horizontal">-->
+
+				<!--<RadioButton-->
+				<!--android:id="@+id/typeStudent"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:text="学生"-->
+				<!--android:textColor="#000"-->
+				<!--android:textSize="30px"/>-->
+
+				<!--<RadioButton-->
+				<!--android:id="@+id/typeTeacher"-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginLeft="40px"-->
+				<!--android:text="老师"-->
+				<!--android:textColor="#000"-->
+				<!--android:textSize="30px"/>-->
+
+				<!--</RadioGroup>-->
+
+				<Button
+					android:id="@+id/submit"
+					android:layout_width="600px"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="100px"
+					android:text="提交"/>
+
+			</LinearLayout>
+		</ScrollView>
+
+		<Button
+			android:id="@+id/teacherLogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginRight="30px"
+			android:layout_marginBottom="30px"
+			android:text="教师登录"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/con"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="200px"
+		android:layout_marginRight="200px"
+		android:background="@drawable/shadow_bg"
+		android:clickable="true">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#fff">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="30px">
+
+				<TextView
+					android:id="@+id/text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="    为了更好地改善上课效果，请你对刚刚完成的课程进行评价，评价结果仅作为改进课程体验使用，请如实作答。"
+					android:textColor="#000"
+					android:textSize="26px"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="1、你觉得本次课程内容是否针对自己的问题？"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupMatch"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="2、你觉得本次课程的难度对自己而言怎么样？"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupDiff"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="3、你觉得课上老师讲解得如何？"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupQuality"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="4、你觉得通过本次课程你收获多大？"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupGot"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30px"
+					android:text="5、你是否喜欢上这位老师的课？"
+					android:textColor="#000"
+					android:textSize="30px"/>
+
+				<com.lys.kit.view.SelectionGroup
+					android:id="@+id/selectionGroupLike"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+				<com.lys.base.view.ClickTextView
+					android:id="@+id/commit"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="30px"
+					android:background="@drawable/img_selection_yes"
+					android:gravity="center"
+					android:paddingLeft="200px"
+					android:paddingRight="200px"
+					android:text="提交"
+					android:textColor="#fff"
+					android:textSize="30px"/>
+
+			</LinearLayout>
+		</ScrollView>
+
+	</RelativeLayout>
+
+	<ImageView
+		android:id="@+id/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/content"
+		android:layout_alignRight="@id/content"
+		android:layout_marginTop="-10px"
+		android:layout_marginRight="-10px"
+		android:background="@drawable/photo_btn_bg"
+		android:src="@drawable/img_delete_photo">
+	</ImageView>
+
+</RelativeLayout>

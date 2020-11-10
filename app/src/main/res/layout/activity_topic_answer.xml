@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/img_topic_title_bg">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="85px"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_topic_mark"/>
+
+			<TextView
+				android:id="@+id/number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15px"
+				android:text="已刷 0 题"
+				android:textColor="#fff"
+				android:textSize="33px"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/debugInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="1200px"
+			android:text="调试信息"
+			android:textColor="#fff"
+			android:textSize="33px"/>
+
+		<LinearLayout
+			android:id="@+id/favCon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="442px"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:padding="10px">
+
+			<ImageView
+				android:id="@+id/star"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_topic_fav_select"/>
+
+			<TextView
+				android:id="@+id/favText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15px"
+				android:text="已收藏"
+				android:textColor="#fff"
+				android:textSize="33px"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/jump"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="776px"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:padding="10px">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_topic_next"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15px"
+				android:text="跳过本题"
+				android:textColor="#fff"
+				android:textSize="33px"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="25px"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/switchParse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_topic_parse_show"
+				android:visibility="gone"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/commit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="50px"
+				android:src="@drawable/img_topic_commit"/>
+
+			<!--<ImageView-->
+			<!--android:id="@+id/close"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_marginRight="30px"-->
+			<!--android:background="@drawable/photo_btn_bg"-->
+			<!--android:src="@drawable/img_delete_photo">-->
+			<!--</ImageView>-->
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<com.lys.kit.view.BoardView
+			android:id="@+id/board"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<com.lys.kit.view.BoardToolBar
+			android:id="@+id/toolBar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<RelativeLayout
+			android:id="@+id/parseCon"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#5555"
+			android:visibility="visible">
+
+			<LinearLayout
+				android:layout_width="1018px"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:background="#fff"
+				android:clickable="true"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20px"
+					android:layout_marginTop="10px"
+					android:layout_marginBottom="10px"
+					android:text="相关考点："
+					android:textColor="#000"
+					android:textSize="22px"/>
+
+				<com.lys.base.view.FlowLinearLayout
+					android:id="@+id/knowledgeCon"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:layout_marginBottom="10px"
+					android:orientation="horizontal">
+
+					<!--<include-->
+					<!--layout="@layout/view_knowledge"-->
+					<!--android:layout_width="wrap_content"-->
+					<!--android:layout_height="wrap_content"/>-->
+
+				</com.lys.base.view.FlowLinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="10px"
+					android:background="#f2f2f2"/>
+
+				<ScrollView
+					android:id="@+id/parseScroll"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:overScrollMode="never">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<ImageView
+							android:id="@+id/parseImg"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="#fff"/>
+
+					</LinearLayout>
+				</ScrollView>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="10px"
+					android:background="#f2f2f2"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="150px"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/resultText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="12px"
+						android:text="恭喜你，回答正确！"
+						android:textColor="#0f0"
+						android:textSize="22px"/>
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:orientation="horizontal">
+
+						<com.lys.base.view.ClickImageView
+							android:id="@+id/resultError"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="12px"
+							android:layout_marginRight="12px"
+							android:src="@drawable/img_topic_answer_error"/>
+
+						<com.lys.base.view.ClickImageView
+							android:id="@+id/resultRight"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="12px"
+							android:layout_marginRight="12px"
+							android:src="@drawable/img_topic_answer_right"/>
+
+						<com.lys.base.view.ClickImageView
+							android:id="@+id/nextTopic"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="12px"
+							android:layout_marginRight="12px"
+							android:src="@drawable/img_topic_again"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

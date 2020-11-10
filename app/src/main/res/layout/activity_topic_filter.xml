@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f0f0f0">
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/img_topic_bg2"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="100px"
+			android:gravity="center"
+			android:text="章节练习"
+			android:textColor="#f0f0f0"
+			android:textSize="38px"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="45px"
+			android:layout_marginRight="45px"
+			android:layout_weight="1"
+			android:background="@drawable/round_white_bg"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="82px"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:id="@+id/allTopicCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:layout_marginLeft="42px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px">
+
+					<ImageView
+						android:id="@+id/allTopicStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_check_light"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:text="全部题型"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/selectTopicCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:layout_marginLeft="60px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px">
+
+					<ImageView
+						android:id="@+id/selectTopicStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_check_light"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:text="仅选择题"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="70px"
+					android:layout_marginRight="70px"
+					android:src="@drawable/img_topic_split"/>
+
+				<LinearLayout
+					android:id="@+id/diffLowCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px">
+
+					<ImageView
+						android:id="@+id/diffLowStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_check_light"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:text="容易"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/diffMiddleCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:layout_marginLeft="100px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px">
+
+					<ImageView
+						android:id="@+id/diffMiddleStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_check_light"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:text="中等"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/diffHighCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:layout_marginLeft="100px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px">
+
+					<ImageView
+						android:id="@+id/diffHighStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/img_check_light"/>
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:text="较难"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+				</LinearLayout>
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="70px"
+					android:layout_marginRight="70px"
+					android:src="@drawable/img_topic_split"
+					android:visibility="gone"/>
+
+				<LinearLayout
+					android:id="@+id/selectAllCon"
+					android:layout_width="wrap_content"
+					android:layout_height="76px"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingLeft="20px"
+					android:paddingRight="20px"
+					android:visibility="gone">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="全选"
+						android:textColor="#454545"
+						android:textSize="24px"/>
+
+					<ImageView
+						android:id="@+id/selectAllStates"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="15px"
+						android:src="@drawable/img_select_no"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="10px"
+				android:background="#f2f2f2"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:overScrollMode="never"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="138px"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/reset"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/img_topic_reset"/>
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/start"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20px"
+				android:src="@drawable/img_topic_start"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

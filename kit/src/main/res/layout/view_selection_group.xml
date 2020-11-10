@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:padding="20px"
+		android:visibility="visible">
+
+		<RelativeLayout
+			android:id="@+id/selectionCon0"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection0"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection3"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon4"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection4"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon5"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection5"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/selectionCon6"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_weight="1">
+
+			<CheckBox
+				android:id="@+id/selection6"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="8px"
+				android:background="@drawable/selection_bg"
+				android:button="@null"
+				android:gravity="center"
+				android:paddingBottom="2px"
+				android:text="A"
+				android:textColor="#797e82"
+				android:textSize="36px"/>
+
+			<ImageView
+				android:id="@+id/isRightSelection6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/img_right_selection"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

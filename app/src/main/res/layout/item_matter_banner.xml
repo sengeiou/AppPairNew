@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="500px">
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="30px"
+		android:layout_marginRight="30px"/>
+
+	<LinearLayout
+		android:id="@+id/indicatorContiner"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="15px"
+		android:orientation="horizontal">
+
+		<View
+			android:layout_width="14px"
+			android:layout_height="14px"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="20px"
+			android:background="@drawable/loop_dot"/>
+
+		<View
+			android:layout_width="14px"
+			android:layout_height="14px"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="20px"
+			android:background="@drawable/loop_dot"/>
+
+		<View
+			android:layout_width="14px"
+			android:layout_height="14px"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="20px"
+			android:background="@drawable/loop_dot"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

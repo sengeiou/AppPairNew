@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000">
+
+	<FrameLayout
+		android:id="@+id/imageCon"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ImageView
+			android:id="@+id/image"
+			android:layout_width="512px"
+			android:layout_height="512px"
+			android:src="@drawable/img_default"
+			android:translationX="0px"
+			android:translationY="0px"/>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<View
+			android:id="@+id/maskTop"
+			android:layout_width="match_parent"
+			android:layout_height="200px"
+			android:background="#8000"/>
+
+		<LinearLayout
+			android:id="@+id/maskHeight"
+			android:layout_width="match_parent"
+			android:layout_height="500px"
+			android:orientation="horizontal">
+
+			<View
+				android:id="@+id/maskLeft"
+				android:layout_width="700px"
+				android:layout_height="match_parent"
+				android:background="#8000"/>
+
+			<View
+				android:id="@+id/maskWidth"
+				android:layout_width="500px"
+				android:layout_height="match_parent"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#8000"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#8000"/>
+
+	</LinearLayout>
+
+	<com.lys.base.view.ClickImageView
+		android:id="@+id/cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20px"
+		android:layout_marginTop="20px"
+		android:src="@drawable/icon_menu_cancel"/>
+
+	<com.lys.base.view.ClickImageView
+		android:id="@+id/ok"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="20px"
+		android:layout_marginTop="20px"
+		android:src="@drawable/icon_menu_ok"/>
+
+</RelativeLayout>

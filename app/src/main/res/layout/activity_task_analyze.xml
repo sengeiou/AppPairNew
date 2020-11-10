@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="88px">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="xxxxx"
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:orientation="horizontal">
+
+			<com.lys.base.view.ClickImageView
+				android:id="@+id/flush"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="30px"
+				android:paddingLeft="14px"
+				android:paddingTop="16px"
+				android:paddingRight="10px"
+				android:paddingBottom="10px"
+				android:src="@drawable/img_add_task"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:padding="10px">
+
+				<View
+					android:layout_width="10px"
+					android:layout_height="16px"
+					android:background="#f00"
+					android:visibility="invisible"/>
+
+				<TextView
+					android:layout_width="120px"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10px"
+					android:text=""
+					android:textColor="#202122"
+					android:textSize="24px"/>
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="24px">
+
+					<LinearLayout
+						android:id="@+id/timeCon"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<!--<View-->
+						<!--android:layout_width="0px"-->
+						<!--android:layout_height="match_parent"-->
+						<!--android:layout_weight="100"-->
+						<!--android:background="#0ff"/>-->
+
+						<!--<TextView-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:text="MM-dd HH:mm"-->
+						<!--android:textColor="#202122"-->
+						<!--android:textSize="15px"/>-->
+
+						<!--<View-->
+						<!--android:layout_width="0px"-->
+						<!--android:layout_height="match_parent"-->
+						<!--android:layout_weight="100"-->
+						<!--android:background="#0ff"/>-->
+
+					</LinearLayout>
+
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:overScrollMode="never"
+				android:scrollbars="none"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/msg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="加载中。。。"
+			android:textColor="#000"
+			android:textSize="32px"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_shadow_line"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

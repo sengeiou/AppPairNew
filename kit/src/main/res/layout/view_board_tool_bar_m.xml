@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!--<SurfaceView-->
+	<!--android:layout_width="0dp"-->
+	<!--android:layout_height="0dp"-->
+	<!--android:layout_centerInParent="true"-->
+	<!--android:visibility="gone"/>-->
+
+	<View
+		android:id="@+id/mask"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:id="@+id/dirCon"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="-67dp"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:layout_width="67dp"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:orientation="vertical">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconSend"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:scaleType="center"
+					android:src="@drawable/img_send_page"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconGrid"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/img_grid_page"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconInsert"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/component_insert"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconWeike"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/component_weike"/>
+
+				<CheckBox
+					android:id="@+id/photoLock"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:button="@null"
+					android:checked="true"
+					android:drawableLeft="@drawable/photo_lock"
+					android:paddingLeft="0dp"/>
+
+				<!--<CheckBox-->
+				<!--android:id="@+id/muteAudio"-->
+				<!--android:layout_width="30dp"-->
+				<!--android:layout_height="30dp"-->
+				<!--android:layout_marginTop="10dp"-->
+				<!--android:button="@null"-->
+				<!--android:drawableLeft="@drawable/mute_audio"-->
+				<!--android:paddingLeft="0dp"-->
+				<!--android:visibility="gone"/>-->
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconAddPage"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/img_add_page"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconAdd"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/icon_add"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/drawingPen"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/drawing_pen"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/drawingEraser"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/drawing_eraser"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconColor"
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginTop="10dp"
+					android:scaleType="center"
+					android:src="@drawable/icon_color"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconDelete"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/img_delete_page"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconClear"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_clear"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/iconReduce"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/icon_reduce"/>
+
+				<CheckBox
+					android:id="@+id/touchWrite"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:button="@drawable/touch_write"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+		<com.lys.kit.view.FingerImageView
+			android:id="@+id/dirBar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingBottom="100dp"
+			android:paddingRight="25dp"
+			android:paddingTop="100dp"
+			android:src="@drawable/img_board_menu_bar"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

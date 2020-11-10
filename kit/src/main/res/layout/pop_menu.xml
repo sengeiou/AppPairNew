@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/choice_image_bg"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/menu0"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line0"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu1"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line1"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu2"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line2"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu3"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line3"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu4"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line4"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu5"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line5"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu6"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line6"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu7"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line7"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu8"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+	<View
+		android:id="@+id/line8"
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#f3f4f4"/>
+
+	<TextView
+		android:id="@+id/menu9"
+		android:layout_width="match_parent"
+		android:layout_height="70px"
+		android:gravity="center"
+		android:lines="1"
+		android:text="菜单"
+		android:textColor="#000"
+		android:textSize="27px"/>
+
+</LinearLayout>

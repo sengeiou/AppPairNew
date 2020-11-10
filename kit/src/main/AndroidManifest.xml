@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.lys.kit">
+
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+	<application>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityCameraLandscape"
+			android:launchMode="singleInstance"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityCameraPortrait"
+			android:launchMode="singleInstance"
+			android:screenOrientation="portrait">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityBoard"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityRecord"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivitySelectImage"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivitySelectNetImage"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityCrop">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityCropHead"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<!--<activity-->
+		<!--android:name="com.lys.kit.activity.ActivityTopicFilter"-->
+		<!--android:screenOrientation="landscape">-->
+		<!--</activity>-->
+
+		<!--<activity-->
+		<!--android:name="com.lys.kit.activity.ActivityTopicSelect"-->
+		<!--android:screenOrientation="landscape">-->
+		<!--</activity>-->
+
+		<activity
+			android:name="com.lys.kit.activity.ActivityTopicSearch"
+			android:screenOrientation="landscape"
+			android:windowSoftInputMode="stateHidden">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivitySelectSelectionGroup"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity
+			android:name="com.lys.kit.activity.ActivitySetSelectionGroup"
+			android:screenOrientation="landscape">
+		</activity>
+
+	</application>
+
+</manifest>

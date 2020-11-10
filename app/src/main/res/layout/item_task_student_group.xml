@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingLeft="20dp"
+	android:paddingTop="10dp"
+	android:paddingRight="20dp"
+	android:paddingBottom="5dp">
+
+	<include
+		android:id="@+id/card0"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card1"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card2"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card3"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card4"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="1"/>
+
+	<include
+		android:id="@+id/card5"
+		layout="@layout/item_task_student_one"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_weight="1"/>
+
+</LinearLayout>

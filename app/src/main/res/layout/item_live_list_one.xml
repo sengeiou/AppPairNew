@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="420px"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="12px"
+		android:background="@drawable/task_student_one_job_bg">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="400px"
+				android:layout_height="250px"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="6px">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/cover"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#e8edf1"
+					android:src="@drawable/img_default"/>
+
+				<TextView
+					android:id="@+id/state"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:background="#8000"
+					android:padding="5dp"
+					android:text="直播尚未开始"
+					android:textColor="#fff"
+					android:textSize="18sp"/>
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="12px"
+				android:ellipsize="end"
+				android:lines="1"
+				android:text="字名字名字名字名字名字"
+				android:textColor="#474747"
+				android:textSize="24px"/>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="12px"
+				android:layout_marginRight="12px"
+				android:layout_marginBottom="2px">
+
+				<TextView
+					android:id="@+id/startTime"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:text="07-25 00:00:00"
+					android:textColor="#474747"
+					android:textSize="20px"/>
+
+				<TextView
+					android:id="@+id/actorId"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@id/startTime"
+					android:ellipsize="end"
+					android:lines="1"
+					android:text="发送者：名字"
+					android:textColor="#474747"
+					android:textSize="18px"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

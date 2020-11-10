@@ -1,0 +1,117 @@
+package com.lys.board.dawing;
+
+import android.graphics.Canvas;
+import android.graphics.Paint;
+
+import com.alibaba.fastjson.JSONObject;
+import com.lys.board.utils.LysBoardDrawUtils;
+import com.lys.board.utils.LysBoardPoint;
+import com.lys.protobuf.SDrawing;
+import com.lys.protobuf.SDrawingOval;
+
+public class LysBoardDrawingOval extends LysBoardDrawing
+{
+	private Paint mPaint = null;
+
+	private LysBoardPoint pos = null;
+	private Float radiusX = 0F;
+	private Float radiusY = 0F;
+
+	public LysBoardDrawingOval()
+	{
+		mPaint = new Paint();
+		mPaint.setAntiAlias(true);
+		mPaint.setDither(true);
+		mPaint.setStrokeCap(Paint.Cap.ROUND);
+		mPaint.setStyle(Paint.Style.STROKE);
+	}
+
+	@Override
+	public void init(int paintColor, float strokeWidth)
+	{
+		mPaint.setColor(paintColor);
+		mPaint.setStrokeWidth(strokeWidth);
+	}
+
+	@Override
+	public void init(JSONObject json)
+	{
+		mPaint.setColor(json.getInteger("paintColor"));
+		mPaint.setStrokeWidth(json.getFloat("strokeWidth"));
+		pos = new LysBoardPoint(json.getJSONObject("pos"));
+		radiusX = json.getFloat("radiusX");
+		radiusY = json.getFloat("radiusY");
+	}
+
+	@Override
+	public void init(SDrawing proto)
+	{
+		SDrawingOval oval = proto.oval;
+		mPaint.setColor(oval.paintColor);
+		mPaint.setStrokeWidth(oval.strokeWidth);
+		pos = new LysBoardPoint(oval.pos);
+		radiusX = oval.radiusX;
+		radiusY = oval.radiusY;
+	}
+
+	@Override
+	public void downPoint(LysBoardPoint point)
+	{
+		pos = point;
+	}
+
+	@Override
+	public void movePoint(LysBoardPoint point)
+	{
+		radiusX = Math.abs(pos.x - point.x);
+		radiusY = Math.abs(pos.y - point.y);
+	}
+
+	@Override
+	public void upPoint(LysBoardPoint point)
+	{
+		radiusX = Math.abs(pos.x - point.x);
+		radiusY = Math.abs(pos.y - point.y);
+	}
+
+	@Override
+	public void draw(Canvas canvas)
+	{
+		if (pos != null && radiusX > 0 && radiusY > 0)
+			LysBoardDrawUtils.drawOval(canvas, mPaint, pos, radiusX, radiusY);
+	}
+
+	@Override
+	public void drawGizmo(Canvas canvas)
+	{
+
+	}
+
+	@Override
+	public JSONObject saveToJson()
+	{
+		JSONObject json = new JSONObject(true);
+		json.put("drawingType", LysBoardDrawingType.Oval);
+		json.put("paintColor", mPaint.getColor());
+		json.put("strokeWidth", mPaint.getStrokeWidth());
+		json.put("pos", pos.saveToJson());
+		json.put("radiusX", radiusX);
+		json.put("radiusY", radiusY);
+		return json;
+	}
+
+	@Override
+	public SDrawing saveToProto()
+	{
+		SDrawing drawing = new SDrawing();
+		drawing.drawingType = LysBoardDrawingType.Oval;
+		SDrawingOval oval = new SDrawingOval();
+		oval.paintColor = mPaint.getColor();
+		oval.strokeWidth = mPaint.getStrokeWidth();
+		oval.pos = pos.saveToProto();
+		oval.radiusX = radiusX;
+		oval.radiusY = radiusY;
+		drawing.oval = oval;
+		return drawing;
+	}
+}

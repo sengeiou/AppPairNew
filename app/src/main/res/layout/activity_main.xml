@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<FrameLayout
+		android:id="@+id/mainContiner"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/noNetwork"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#8930"
+			android:gravity="center"
+			android:paddingTop="30px"
+			android:paddingBottom="30px"
+			android:text="网络未连接，请点击设置网络"
+			android:textColor="#d96858"
+			android:textSize="28px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/errorInfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#8203"
+			android:gravity="center"
+			android:paddingTop="30px"
+			android:paddingBottom="30px"
+			android:text="错误XXX，请点击重试"
+			android:textColor="#d96858"
+			android:textSize="28px"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/test"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="50px"
+		android:layout_marginRight="300px"
+		android:text="测试"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.lys.app.pair"
+//        applicationId "com.lys.app.desktop" // 打这个包的时候设置主桌面HOME
+//        applicationId "com.lys.app.pair.zhixue"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 20092301 // 版本号只能增，不能减，不然desktop升级有问题
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(path: ':base')
+    implementation project(path: ':board')
+    implementation project(path: ':kit')
+    implementation project(path: ':player')
+    implementation project(path: ':IMKit')
+    implementation project(path: ':Sight')
+    implementation project(path: ':RCSticker')
+
+    api 'com.umeng.umsdk:common:2.2.5'
+    api 'com.umeng.umsdk:analytics:8.1.6'
+    api 'com.umeng.umsdk:utdid:1.5.2'
+
+//    api 'cn.rongcloud.sdk:im_lib:2.10.6'
+//    api 'cn.rongcloud.sdk:im_kit:2.10.6'
+    api 'cn.rongcloud.rtclib:rtc_lib:3.2.2'
+
+    api(group: 'org.tmatesoft.svnkit', name: 'svnkit', version: '1.10.1') {
+        exclude group: 'com.jcraft', module: 'jsch.agentproxy.connector-factory'
+    }
+
+    api 'com.king.zxing:zxing-lite:1.0.5'
+    api 'com.github.promeg:tinypinyin:2.0.3'
+    api 'com.aliyun.dpa:oss-android-sdk:+'
+}

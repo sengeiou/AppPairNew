@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_vertical"
+	android:orientation="horizontal"
+	android:paddingTop="6px"
+	android:paddingBottom="6px">
+
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="40px"
+		android:src="@drawable/img_topic_point_normal"/>
+
+	<TextView
+		android:id="@+id/date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30px"
+		android:text="1920-07-25 00:00:00"
+		android:textColor="#38b2ff"
+		android:textSize="28px"/>
+
+	<TextView
+		android:id="@+id/time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="25px"
+		android:text="5天前"
+		android:textColor="#38b2ff"
+		android:textSize="26px"/>
+
+</LinearLayout>

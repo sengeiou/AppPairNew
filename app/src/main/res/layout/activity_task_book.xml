@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#bbb">
+
+	<!--<SurfaceView-->
+	<!--android:layout_width="0px"-->
+	<!--android:layout_height="0px"-->
+	<!--android:layout_centerInParent="true"-->
+	<!--android:visibility="gone"/>-->
+
+	<com.lys.base.view.MyViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<com.lys.kit.view.BoardToolBar
+		android:id="@+id/toolBar"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<View
+		android:id="@+id/lockWriteMask"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:visibility="gone"/>
+
+	<!--	<FrameLayout-->
+	<!--		android:layout_width="match_parent"-->
+	<!--		android:layout_height="match_parent">-->
+
+	<!--		<LinearLayout-->
+	<!--			android:id="@+id/videoContainer"-->
+	<!--			android:layout_width="wrap_content"-->
+	<!--			android:layout_height="wrap_content"-->
+	<!--			android:layout_marginLeft="-330px"-->
+	<!--			android:layout_marginTop="120px"-->
+	<!--			android:orientation="vertical">-->
+	<!--		</LinearLayout>-->
+
+	<!--	</FrameLayout>-->
+
+	<TextView
+		android:id="@+id/pageNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="30px"
+		android:gravity="center"
+		android:text=""
+		android:textColor="#666"
+		android:textSize="30px"/>
+
+	<TextView
+		android:id="@+id/mode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="30px"
+		android:layout_marginBottom="30px"
+		android:gravity="center"
+		android:text="上课模式"
+		android:textColor="#666"
+		android:textSize="20px"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="20px"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/beiZhu"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:gravity="center"
+			android:text="备注"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/testCommit"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:enabled="false"
+			android:gravity="center"
+			android:text="测试提交"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/commitJob"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:gravity="center"
+			android:text="提交作业"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/readOver"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:gravity="center"
+			android:text="批阅完成"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/startTeach"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:gravity="center"
+			android:text="开始上课"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<TextView
+			android:id="@+id/userList"
+			android:layout_width="216px"
+			android:layout_height="60px"
+			android:layout_marginRight="30px"
+			android:background="@drawable/btn_bg"
+			android:gravity="center"
+			android:text="用户列表"
+			android:textColor="#fff"
+			android:textSize="23px"
+			android:visibility="gone"/>
+
+		<!--		<CheckBox-->
+		<!--			android:id="@+id/muteVideo"-->
+		<!--			android:layout_width="72px"-->
+		<!--			android:layout_height="72px"-->
+		<!--			android:layout_marginRight="30px"-->
+		<!--			android:button="@null"-->
+		<!--			android:drawableLeft="@drawable/mute_video"-->
+		<!--			android:paddingLeft="8px"-->
+		<!--			android:visibility="gone"/>-->
+
+		<CheckBox
+			android:id="@+id/muteAudio"
+			android:layout_width="72px"
+			android:layout_height="72px"
+			android:layout_marginRight="30px"
+			android:button="@null"
+			android:drawableLeft="@drawable/mute_audio"
+			android:paddingLeft="8px"
+			android:visibility="gone"/>
+
+		<CheckBox
+			android:id="@+id/lockWrite"
+			android:layout_width="72px"
+			android:layout_height="72px"
+			android:layout_marginRight="30px"
+			android:button="@null"
+			android:drawableLeft="@drawable/lock_write"
+			android:paddingLeft="8px"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/userCon"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#8888"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="500px"
+			android:layout_marginTop="100px"
+			android:layout_marginRight="500px"
+			android:layout_marginBottom="100px"
+			android:background="@drawable/shadow_bg"
+			android:clickable="true"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#f0f0f0"
+				android:gravity="right|center_vertical"
+				android:orientation="horizontal"
+				android:paddingTop="20px"
+				android:paddingBottom="20px">
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/allVoiceClose"
+					android:layout_width="72px"
+					android:layout_height="72px"
+					android:layout_marginRight="30px"
+					android:src="@drawable/icon_voice_close"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/allVoiceOpen"
+					android:layout_width="72px"
+					android:layout_height="72px"
+					android:layout_marginRight="30px"
+					android:src="@drawable/icon_voice_open"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/allPenClose"
+					android:layout_width="72px"
+					android:layout_height="72px"
+					android:layout_marginRight="30px"
+					android:src="@drawable/icon_pen_close"/>
+
+				<com.lys.base.view.ClickImageView
+					android:id="@+id/allPenOpen"
+					android:layout_width="72px"
+					android:layout_height="72px"
+					android:layout_marginRight="30px"
+					android:src="@drawable/icon_pen_open"/>
+
+				<TextView
+					android:id="@+id/allCheck"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="30px"
+					android:background="@drawable/app_btn"
+					android:paddingLeft="40px"
+					android:paddingTop="16px"
+					android:paddingRight="40px"
+					android:paddingBottom="16px"
+					android:text="同步检查"
+					android:textColor="#13121a"
+					android:textSize="20px"/>
+
+			</LinearLayout>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/remotes"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#fff"
+				android:overScrollMode="never"
+				android:visibility="visible"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="50px"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<CheckBox
+			android:id="@+id/speakerphone"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="扬声器"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/debugInfo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="300px"
+		android:layout_marginBottom="30px"
+		android:text="debugInfo"
+		android:textSize="30px"
+		android:visibility="gone"/>
+
+	<!--<ImageView-->
+	<!--android:id="@+id/close"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_alignParentRight="true"-->
+	<!--android:layout_marginRight="20px"-->
+	<!--android:layout_marginTop="20px"-->
+	<!--android:background="@drawable/photo_btn_bg"-->
+	<!--android:src="@drawable/img_delete_photo">-->
+	<!--</ImageView>-->
+
+</RelativeLayout>

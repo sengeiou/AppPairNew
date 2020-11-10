@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/con"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="10px">
+
+		<View
+			android:id="@+id/commitFlag"
+			android:layout_width="10px"
+			android:layout_height="16px"
+			android:background="#f00"/>
+
+		<TextView
+			android:id="@+id/name"
+			android:layout_width="120px"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10px"
+			android:text="名字名名"
+			android:textColor="#202122"
+			android:textSize="24px"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="24px">
+
+			<LinearLayout
+				android:id="@+id/eventCon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+
+				<!--<View-->
+				<!--android:layout_width="0px"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_weight="10000"-->
+				<!--android:background="#0f00"/>-->
+
+				<!--<View-->
+				<!--android:layout_width="1px"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:background="#f00"-->
+				<!--android:visibility="visible"/>-->
+				<!---->
+
+				<!--<TextView-->
+				<!--android:layout_width="0px"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_weight="2"-->
+				<!--android:background="#0f0"/>-->
+
+				<!--<View-->
+				<!--android:layout_width="1px"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:background="#f00"-->
+				<!--android:visibility="visible"/>-->
+				<!---->
+
+				<!--<View-->
+				<!--android:layout_width="0px"-->
+				<!--android:layout_height="match_parent"-->
+				<!--android:layout_weight="10000"-->
+				<!--android:background="#000f"/>-->
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/commitCon"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="4px"
+				android:layout_marginBottom="4px"
+				android:orientation="horizontal">
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#15000000"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="500px"
+		android:layout_marginTop="10px"
+		android:layout_marginRight="500px"
+		android:layout_marginBottom="10px"
+		android:background="@drawable/search_bg"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/keyword"
+			android:layout_width="match_parent"
+			android:layout_height="56px"
+			android:layout_weight="1"
+			android:background="@null"
+			android:hint="搜索关键字"
+			android:imeOptions="actionSearch"
+			android:inputType="textPersonName"
+			android:paddingLeft="24px"
+			android:textColor="#000"
+			android:textColorHint="#474b4c"
+			android:textSize="24px"/>
+
+		<TextView
+			android:id="@+id/count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30px"
+			android:layout_marginRight="30px"
+			android:letterSpacing="0.12"
+			android:text=""
+			android:textColor="#000"
+			android:textSize="24px"/>
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="50px"
+		android:paddingRight="50px"/>
+
+</LinearLayout>

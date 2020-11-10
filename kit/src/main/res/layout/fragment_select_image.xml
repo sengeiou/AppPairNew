@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="50px"
+		android:paddingRight="50px"/>
+
+	<LinearLayout
+		android:id="@+id/menuBar"
+		android:layout_width="wrap_content"
+		android:layout_height="140px"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/delete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/img_delete"/>
+
+		<com.lys.base.view.ClickImageView
+			android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100px"
+			android:src="@drawable/img_cancel"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

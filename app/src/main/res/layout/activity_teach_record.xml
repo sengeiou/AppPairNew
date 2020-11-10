@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#fff"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="88px"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="30px"
+			android:text="上课记录（XXX）"
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100px"
+			android:text="时间段："
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+		<TextView
+			android:id="@+id/fromTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/app_btn"
+			android:paddingLeft="40px"
+			android:paddingTop="16px"
+			android:paddingRight="40px"
+			android:paddingBottom="16px"
+			android:text="00月00日"
+			android:textColor="#13121a"
+			android:textSize="22px"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" ~ "
+			android:textColor="#000"
+			android:textSize="28px"/>
+
+		<TextView
+			android:id="@+id/toTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/app_btn"
+			android:paddingLeft="40px"
+			android:paddingTop="16px"
+			android:paddingRight="40px"
+			android:paddingBottom="16px"
+			android:text="00月00日"
+			android:textColor="#13121a"
+			android:textSize="22px"/>
+
+		<TextView
+			android:id="@+id/search"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="100px"
+			android:background="@drawable/app_btn"
+			android:paddingLeft="40px"
+			android:paddingTop="16px"
+			android:paddingRight="40px"
+			android:paddingBottom="16px"
+			android:text="查询"
+			android:textColor="#13121a"
+			android:textSize="22px"
+			android:visibility="gone"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical|right"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tongji"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="50px"
+				android:background="@drawable/app_btn"
+				android:paddingLeft="40px"
+				android:paddingTop="16px"
+				android:paddingRight="40px"
+				android:paddingBottom="16px"
+				android:text="统计"
+				android:textColor="#13121a"
+				android:textSize="22px"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:overScrollMode="never"
+			android:scrollbars="none"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:src="@drawable/img_shadow_line"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
